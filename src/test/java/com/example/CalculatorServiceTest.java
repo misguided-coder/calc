@@ -39,4 +39,9 @@ public class CalculatorServiceTest {
 		assertEquals(15, service.doDiff(10, -5));
 	}
 
+	@Test
+	public void testPositiveCheck()
+	{
+		assertEquals(15, service.doSum(10, 5));
+	}
 }
