@@ -16,7 +16,12 @@ public class CalculatorServiceTest {
 	@After
 	public void afterTest() {
 		service = null;
-		System.out.println("After Test!");
+		System.out.println("After Test Case!");
+	}
+
+	@Test
+	public void testOneSum() {
+		assertEquals(20, service.doSum(10, 10));
 	}
 
 	@Test
